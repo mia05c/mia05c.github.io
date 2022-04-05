@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Mia Caliboso</title>
+        <link rel="stylesheet" type="text/css" href="finalproject.css">
+        <script src="portfolio.js" defer></script>
+    </head>
+
+<body>
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About me">About Me</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+            
+        </div>
+<br>
+<br>
+        <div class="Texxt">
+            <h1 class="heading">Mia's Portfolio</h1>
+                <p class="textt">
+                    <strong><q>Testing leads to failure, and failure leads to understanding.</strong></q>
+                    <br>- Burt Rutan
+                    <br>
+                    <br> My name is Mia Caliboso. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy! 
+                </p>
+        </div>
+<br>
+<br>
+<br>
+
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 3 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/mc.jpg" alt="Picture of me">
+                        <div class="text">Mia Caliboso (Student)</div>
+                    </div>
+                    <!-- Slide 2 of 3 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/coding_icon.png" alt="coding logo"> 
+                        <div class="text">I am curently studying on how to code,</div>
+                    </div>
+                    <!-- Slide 3 of 3 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/code-stable.png" alt="VSC logo">
+                        <div class="text">using Visual Studio Code.</div>
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        
+        <!--About section-->
+        <div class="Row" id="About me">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="images/paris.png" alt="A Picture of the Eiffel Tower, Paris, France">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About me</h1>
+                <p class="about_me">
+                    Welcome! And Thank you for visiting my site! Let me just share some details about myself. My Name is Mia, I am a Student at <a href="https://www.academyoflearning.com/locations/british-columbia/vancouver-broadway/"  target="_blank">AOLCC.</a>
+                    I'm currently studying <a href="https://www.academyoflearning.com/programs/british-columbia/software-and-web-developer/" target="_blank">Software and Web Developer.</a>
+                    <br> 
+                    As you can see on the left side, there's a picture of Eiffel Tower. In 2019, I have visited Paris, also known as the "City of Love", I like travelling to places as well as Hiking in summertime!
+                    <br>
+                    <br> Writing codes or making website is now becoming a hobby! What makes me happy while doing it is when everything goes well after running the codes I made from scratch.
+                    <br> 
+                    <br>If you have any questions about my journey as a Software and Web Developer Student, please do not hesitate to contact me!
+                </p>
+            </div>
+        </div>
+<br>
+<br>
+<br>
+<br>
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/mia05c?tab=repositories" target="_blank">Mia Caliboso's GitHub</a>
+                    Please check the right side for a snapshot of my first ever website I wrote on my own. </p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <img src="images/Capture.PNG" alt="Website Snashot: Travelling to London"></a>
+            </div>
+        </div>
+
+<br>
+<br>
+<br>
+<br>
+
+<section>
+        <!-- Contact form -->
+        <div id="Contact">
+            
+            <div class="form-popup" id="myForm">
+                 <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                     <h1>Contact</h1>
+                     <label for="name"><b>Name</b></label>
+                       <input type="text" placeholder="Enter Name" name="name" required>
+                     <label for="phone"><b>Phone</b></label>
+                       <input type="text" placeholder="Enter Phone Number" name="phone">
+                     <label for="email"><b>Email</b></label>		
+                       <input type="text" placeholder="Enter Email" name="email" required>
+                     <label for="message"><b>Message</b></label>
+                       <input type="text" placeholder="Type your message here" name="message">
+          
+                     <button type="submit" class="btn">SUBMIT</button>
+                 </form>
+            </div>
+         </div>
+  
+</section>
+
+
+
+
+</body>
+</html>

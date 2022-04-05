@@ -1,0 +1,264 @@
+/*Affects entire document */
+html {
+    scroll-behavior: smooth; /*This ensures that the page scrolling is smooth when the buttons on the nav bar is clicked */
+}
+
+/*Body*/
+
+body {
+    margin: 1.5%;
+    background-color: #2625255d;
+}
+
+a {
+    color: blue;
+}
+
+/*Navbar Links */
+.Navbar a {
+    float: left; 
+    display: block; 
+    color: blue; 
+    padding: .75vw 1vw; 
+    text-decoration: none; 
+    font-size: 1.5vw; 
+    text-align: center; 
+    position: relative; 
+    -webkit-animation: moveNavText 5.75s; 
+    animation: moveNavText 5.75s; 
+}
+
+/*Navbar hover effects */
+.Navbar a:hover {
+    background-color: #f4f4f4; 
+    color: rgb(196, 71, 71); 
+    font-weight: bold; 
+    cursor: pointer;
+    transition: 0.5s ease-in; 
+}
+
+p {
+    font-family: Perpetua, Rockwell Extra Bold;
+    text-align: justify; 
+    letter-spacing: .1vw; 
+    font-size: 15px; 
+    padding-left: 1vw; 
+    padding-right: 1vw; 
+}
+
+/* Paragraph element hover effect */
+p:hover {
+    transition: transform 1s; /* This makes the transform effect last 1 second */
+	transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
+}
+
+
+/* heading_video text*/
+
+.textt {
+    text-align: center;
+    color:  #ffff;
+    letter-spacing: 3.5px;
+}
+
+.heading {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 4, 36, 0.89);
+    letter-spacing: 2.5px;
+    text-decoration:underline;
+}
+
+.heading:hover {
+    transition: transform 1s; 
+	transform: scale(0.80);
+}
+
+/*top part*/
+
+.Texxt {
+    text-align: center; /* This center aligns the text */
+}
+
+.Texxt:hover {
+    transition: transform 2s; /* This makes the transform effect last 2 seconds */
+    transform: scale(1.1); /* This makes the elements with class "center" increase in size by 1.1 when hovered over */
+}
+
+
+.about_me {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color:rgba(2, 2, 2, 0.918);
+}
+
+/***** Slideshow Styling *****/
+#Slideshow_Background {
+    background: rgba(32, 29, 29, 0.248); /* This creates a slightly transparent white background that's palced over the video in the background */    
+}
+
+.mySlides{
+    display: none; /* This prevents the images from being displayed, we will use JS to display these */
+}
+
+/* Slideshow section / container */
+#Slideshow_Container {
+    width: 39.5vw; 
+    height: auto; 
+    padding-top: 4%; 
+    position: relative; 
+    margin:auto; 
+}
+
+/* Remove the underline from the previous and next buttons on the slideshow */
+#Slideshow_Container a {
+    text-decoration: none;
+}
+
+/* Images contained within the slideshow */
+.Slideshow_Images {
+    vertical-align: middle; /* This centers the images vertically within the slideshow container */
+    height: auto; /* The height of the images is automatically adjusted based on the content, ie if your images are different sizes, they will display as different sizes */
+    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75); /* Adds a shadow around the slideshow images */
+    width: 100%; /* The width of the images is automatically adjusted based on the content */
+}
+
+/* Next and previous buttons */
+.Previous, .Next {
+    cursor: pointer;
+    position: absolute; 
+    top: 50%; 
+    width: auto; 
+    padding: 2vw; 
+    color: darkgray; 
+    font-weight: bold;
+    font-size: 1.5vw;
+    border-radius: 0 3px 3px 0; /* Adds a slightly rounded border on the top and bottom right corners */
+    user-select: none; /* This property makes it so that the user cannot highlight the text */
+    transition: 0.6s ease; /* This specifies the details of the hover transition for these elements */
+}
+
+/* Positioning the next button on the right hand side */
+.Next {
+    right: 0; /* This moves the next button to the right side of the slideshow container */
+    border-radius: 3px 0 0 3px; /* This changes the border radius on the next button to the top and bottom left of the button */
+}
+
+
+/* Slideshow text */
+.text {
+    color: white; 
+    padding: 1vw;
+    position: absolute; /* This ensures the text is positioned within the image */
+    bottom: 0; /* This property sets the text at the bottom of the image */
+    width: 100%; /* The element covers the full width of the image */
+    text-align: center; /* The text is center aligned within the image */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .1vw; 
+    font-size: 1.5vw; 
+    background-color: rgba(126, 21, 21, 0.75); 
+    font-weight: bold;
+    border-radius: 0px 0px 7px 7px; 
+}
+
+/* Styling of the dots under the slideshow */
+.dot {
+    cursor: pointer; /* The cursor changes to pointer when hovered over the dots */
+    height: 1vw; /* The dots are sized relative to the viewport width */
+    width: 1vw;
+    margin: .25vw; 
+    background-color: white; /* Makes the dots white */
+    border-radius: 50%; 
+    display: inline-block; 
+    transition: background-color 0.6s ease; 
+    z-index: 1; 
+}
+
+/* Hover effect for slideshow dots */
+.active, .dot:hover {
+    background-color: black; 
+}
+
+/* Fading animation for slideshow */
+.fade {
+    animation-name: fade; 
+    animation-duration: 1.5s; 
+    -webkit-animation-name: fade; 
+    -webkit-animation-duration: 1.5s;
+}
+
+
+/* End Slideshow Styling */
+
+/* Image elements */
+img {
+    border-radius: 8px; /* rounded corners */
+    max-width: 100%; /* images stay within the width of their container */
+    max-height: 100%; /* images stay within the height of their container */
+    display: block; 
+    margin: auto auto auto auto; /* This centers all images */
+}
+
+
+
+* {
+    box-sizing: border-box;
+} 
+
+
+.Column_1 {
+    float: left;
+    width: 50%; 
+    padding: 10px;
+    padding-top: 3%; 
+    height: 400px;
+    background-color: #f2f2f2; 
+}
+
+
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #4d4d4d;
+}
+
+
+.Column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+
+.Row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px #20b96d;
+}
+
+button:hover, .form-container .btn:hover {
+    color: white; /* This makes the text in the buttons white when hovered over */
+    background-color: black; 
+    transition-duration: 1s; 
+    -webkit-transition-duration: 1s; 
+    border-color: silver; 
+}
+
+/* Submit button */
+.form-container .btn {
+    background-color: white; 
+    color: black;
+    border-color: black;
+    margin-bottom: 1vh; 
+}
